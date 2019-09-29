@@ -29,6 +29,7 @@ public class CustomListener extends MetaStoreEventListener {
 
     @Override
     public void onAlterTable(AlterTableEvent event) {
+        logWithHeader(event.getOldTable());
         logWithHeader(event.getNewTable());
     }
 
