@@ -18,7 +18,7 @@ export HIVE_AUX_JARS_PATH=/hive-metastore-listener-1.0-SNAPSHOT-jar-with-depende
 vi /opt/hive/conf/hive-site.xml
 
 # Add the tag before the closing configuration tag </configuration> and save:
-<property><name>hive.metastore.event.listeners</name><value>com.medium.hive.hook.CustomListener</value></property>
+<property><name>hive.metastore.event.listeners</name><value>com.medium.hive.metastore.listerner</value></property>
 
 # Restart your Hive Metastore
 ```
